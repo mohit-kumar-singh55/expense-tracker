@@ -6,7 +6,9 @@ import useStyles from "./listStyles";
 function List() {
     const classes = useStyles();
     const transactions = [
-        { id: 1, type: "Income", category: "Salary", amount: 50, date: new Date() }
+        { id: 1, type: "Income", category: "Salary", amount: 50, date: "Thu Jan 20" },
+        { id: 2, type: "Expense", category: "Business", amount: 150, date: "Thu Jan 22" },
+        { id: 3, type: "Income", category: "Pets", amount: 80, date: "Thu Jan 24" },
     ];
 
     return (
