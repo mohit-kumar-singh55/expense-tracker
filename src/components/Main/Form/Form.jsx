@@ -9,7 +9,7 @@ import formatDate from "../../../utils/formatDate";
 const initialState = {
     amount: "",
     category: "",
-    type: "",
+    type: "Income",
     date: formatDate(new Date()),
 }
 
