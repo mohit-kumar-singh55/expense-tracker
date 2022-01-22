@@ -6,8 +6,8 @@ import useStyles from "./detailStyles";
 import useTransactions from '../../useTransactions';
 
 const Details = ({ title }) => {
-    const { total, chartData } = useTransactions(title);
     const classes = useStyles();
+    const { total, chartData } = useTransactions(title);
 
     return (
         <Card className={title === 'Income' ? classes.income : classes.expense}>
