@@ -6,6 +6,7 @@ import { v4 as uuidv4 } from "uuid";
 import { incomeCategories, expenseCategories } from "../../../constants/categories";
 import formatDate from "../../../utils/formatDate";
 import { useSpeechContext } from "@speechly/react-client";
+import SnackBar from '../../SnackBar/SnackBar';
 
 const initialState = {
     amount: "",
@@ -85,6 +86,7 @@ function Form() {
 
     return (
         <Grid container spacing={2}>
+            <SnackBar open={open} setOpen={setOpen} />
             <Grid item xs={12}>
                 <Typography align="center" variant='subtitle2' gutterBottom>
                     {segment && segment.words.map((w) => w.value).join(" ")}
